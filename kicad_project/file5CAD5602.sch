@@ -1,0 +1,394 @@
+EESchema Schematic File Version 4
+LIBS:electronic_load-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3050 1750 2750 1750
+$Comp
+L Device:R R?
+U 1 1 5CAD5763
+P 4000 2150
+AR Path="/5CACB7A9/5CAD5763" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD5763" Ref="R?"  Part="1" 
+F 0 "R?" H 3930 2104 50  0000 R CNN
+F 1 "18k" H 3930 2195 50  0000 R CNN
+F 2 "" V 3930 2150 50  0001 C CNN
+F 3 "~" H 4000 2150 50  0001 C CNN
+	1    4000 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAD576A
+P 4000 2650
+AR Path="/5CACB7A9/5CAD576A" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD576A" Ref="R?"  Part="1" 
+F 0 "R?" H 3930 2604 50  0000 R CNN
+F 1 "2k" H 3930 2695 50  0000 R CNN
+F 2 "" V 3930 2650 50  0001 C CNN
+F 3 "~" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD5771
+P 4000 2900
+AR Path="/5CACB7A9/5CAD5771" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CAD5771" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 2650 50  0001 C CNN
+F 1 "GND" H 4005 2727 50  0000 C CNN
+F 2 "" H 4000 2900 50  0001 C CNN
+F 3 "" H 4000 2900 50  0001 C CNN
+	1    4000 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2900 4000 2800
+Wire Wire Line
+	4000 2500 4000 2400
+Wire Wire Line
+	4000 2000 4000 1650
+Wire Wire Line
+	4000 1650 3650 1650
+Wire Wire Line
+	4000 2400 2750 2400
+Wire Wire Line
+	2750 2400 2750 1750
+Connection ~ 4000 2400
+Wire Wire Line
+	4000 2400 4000 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD577F
+P 4900 1800
+AR Path="/5CACB7A9/5CAD577F" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CAD577F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 1550 50  0001 C CNN
+F 1 "GND" H 4905 1627 50  0000 C CNN
+F 2 "" H 4900 1800 50  0001 C CNN
+F 3 "" H 4900 1800 50  0001 C CNN
+	1    4900 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1750 4900 1750
+Wire Wire Line
+	4900 1750 4900 1800
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5CAD5787
+P 5300 1750
+AR Path="/5CACB7A9/5CAD5787" Ref="J?"  Part="1" 
+AR Path="/5CAD5603/5CAD5787" Ref="J?"  Part="1" 
+F 0 "J?" H 5220 1425 50  0000 C CNN
+F 1 "Conn_01x02" H 5220 1516 50  0000 C CNN
+F 2 "" H 5300 1750 50  0001 C CNN
+F 3 "~" H 5300 1750 50  0001 C CNN
+	1    5300 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAD578E
+P 4500 1650
+AR Path="/5CAD578E" Ref="R?"  Part="1" 
+AR Path="/5CACB7A9/5CAD578E" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD578E" Ref="R?"  Part="1" 
+F 0 "R?" V 4293 1650 50  0000 C CNN
+F 1 "50" V 4384 1650 50  0000 C CNN
+F 2 "" V 4430 1650 50  0001 C CNN
+F 3 "~" H 4500 1650 50  0001 C CNN
+	1    4500 1650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4350 1650 4000 1650
+Connection ~ 4000 1650
+Text GLabel 2050 1550 0    50   Input ~ 0
+Isense
+Text Notes 3850 750  0    50   ~ 0
+Current sense amp\nfor 50 ohm terminated o-scope
+Wire Wire Line
+	5100 1650 4650 1650
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 5CAD5877
+P 3350 1650
+F 0 "U?" H 3400 1950 50  0000 C CNN
+F 1 "OPA2810" H 3450 1850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3350 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 5CAD5A51
+P 3300 5100
+F 0 "U?" H 3300 5467 50  0000 C CNN
+F 1 "OPA2810" H 3300 5376 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3300 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3300 5100 50  0001 C CNN
+	2    3300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 5CAD5A77
+P 3350 1650
+F 0 "U?" H 3308 1696 50  0001 L CNN
+F 1 "OPA2810" H 3308 1650 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3350 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3350 1650 50  0001 C CNN
+	3    3350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD5F7E
+P 3250 2050
+AR Path="/5CACB7A9/5CAD5F7E" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CAD5F7E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3250 1800 50  0001 C CNN
+F 1 "GND" H 3255 1877 50  0000 C CNN
+F 2 "" H 3250 2050 50  0001 C CNN
+F 3 "" H 3250 2050 50  0001 C CNN
+	1    3250 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2050 3250 1950
+$Comp
+L power:VCC #PWR?
+U 1 1 5CAD6077
+P 3250 1050
+F 0 "#PWR?" H 3250 900 50  0001 C CNN
+F 1 "VCC" H 3267 1223 50  0000 C CNN
+F 2 "" H 3250 1050 50  0001 C CNN
+F 3 "" H 3250 1050 50  0001 C CNN
+	1    3250 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1050 3250 1150
+$Comp
+L Device:C C?
+U 1 1 5CAD6190
+P 3550 1150
+F 0 "C?" V 3298 1150 50  0000 C CNN
+F 1 "0.1u" V 3389 1150 50  0000 C CNN
+F 2 "" H 3588 1000 50  0001 C CNN
+F 3 "~" H 3550 1150 50  0001 C CNN
+	1    3550 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD6309
+P 3800 1150
+AR Path="/5CACB7A9/5CAD6309" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CAD6309" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3800 900 50  0001 C CNN
+F 1 "GND" H 3805 977 50  0000 C CNN
+F 2 "" H 3800 1150 50  0001 C CNN
+F 3 "" H 3800 1150 50  0001 C CNN
+	1    3800 1150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3800 1150 3700 1150
+Wire Wire Line
+	3400 1150 3250 1150
+Connection ~ 3250 1150
+Wire Wire Line
+	3250 1150 3250 1350
+$Comp
+L Device:R R?
+U 1 1 5CAD660C
+P 2450 1550
+AR Path="/5CACB7A9/5CAD660C" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD660C" Ref="R?"  Part="1" 
+F 0 "R?" H 2380 1504 50  0000 R CNN
+F 1 "2k" H 2380 1595 50  0000 R CNN
+F 2 "" V 2380 1550 50  0001 C CNN
+F 3 "~" H 2450 1550 50  0001 C CNN
+	1    2450 1550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3050 1550 2600 1550
+Wire Wire Line
+	2300 1550 2050 1550
+Text GLabel 2200 4350 1    50   Input ~ 0
+Vin
+$Comp
+L Device:R R?
+U 1 1 5CAD786D
+P 2200 5250
+AR Path="/5CACB7A9/5CAD786D" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD786D" Ref="R?"  Part="1" 
+F 0 "R?" H 2130 5204 50  0000 R CNN
+F 1 "20k" H 2130 5295 50  0000 R CNN
+F 2 "" V 2130 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2200 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAD78DD
+P 2200 4750
+AR Path="/5CACB7A9/5CAD78DD" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD78DD" Ref="R?"  Part="1" 
+F 0 "R?" H 2130 4704 50  0000 R CNN
+F 1 "180k" H 2130 4795 50  0000 R CNN
+F 2 "" V 2130 4750 50  0001 C CNN
+F 3 "~" H 2200 4750 50  0001 C CNN
+	1    2200 4750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD7923
+P 2200 5550
+AR Path="/5CACB7A9/5CAD7923" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CAD7923" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2200 5300 50  0001 C CNN
+F 1 "GND" H 2205 5377 50  0000 C CNN
+F 2 "" H 2200 5550 50  0001 C CNN
+F 3 "" H 2200 5550 50  0001 C CNN
+	1    2200 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5550 2200 5400
+Wire Wire Line
+	2200 5100 2200 5000
+Wire Wire Line
+	2200 4600 2200 4350
+$Comp
+L Device:R R?
+U 1 1 5CAD89C0
+P 4300 5800
+AR Path="/5CACB7A9/5CAD89C0" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD89C0" Ref="R?"  Part="1" 
+F 0 "R?" H 4230 5754 50  0000 R CNN
+F 1 "2k" H 4230 5845 50  0000 R CNN
+F 2 "" V 4230 5800 50  0001 C CNN
+F 3 "~" H 4300 5800 50  0001 C CNN
+	1    4300 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAD89C7
+P 4300 5300
+AR Path="/5CACB7A9/5CAD89C7" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CAD89C7" Ref="R?"  Part="1" 
+F 0 "R?" H 4230 5254 50  0000 R CNN
+F 1 "2k" H 4230 5345 50  0000 R CNN
+F 2 "" V 4230 5300 50  0001 C CNN
+F 3 "~" H 4300 5300 50  0001 C CNN
+	1    4300 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD89CE
+P 4300 6100
+AR Path="/5CACB7A9/5CAD89CE" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CAD89CE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 5850 50  0001 C CNN
+F 1 "GND" H 4305 5927 50  0000 C CNN
+F 2 "" H 4300 6100 50  0001 C CNN
+F 3 "" H 4300 6100 50  0001 C CNN
+	1    4300 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6100 4300 5950
+Wire Wire Line
+	4300 5650 4300 5550
+Wire Wire Line
+	3600 5100 4300 5100
+Wire Wire Line
+	4300 5100 4300 5150
+Wire Wire Line
+	4300 5550 2700 5550
+Wire Wire Line
+	2700 5550 2700 5200
+Wire Wire Line
+	2700 5200 3000 5200
+Connection ~ 4300 5550
+Wire Wire Line
+	4300 5550 4300 5450
+Wire Wire Line
+	2200 5000 3000 5000
+Connection ~ 2200 5000
+Wire Wire Line
+	2200 5000 2200 4900
+$Comp
+L power:GND #PWR?
+U 1 1 5CADB1AE
+P 5150 5250
+AR Path="/5CACB7A9/5CADB1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5CAD5603/5CADB1AE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 5000 50  0001 C CNN
+F 1 "GND" H 5155 5077 50  0000 C CNN
+F 2 "" H 5150 5250 50  0001 C CNN
+F 3 "" H 5150 5250 50  0001 C CNN
+	1    5150 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5200 5150 5200
+Wire Wire Line
+	5150 5200 5150 5250
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5CADB1B6
+P 5550 5200
+AR Path="/5CACB7A9/5CADB1B6" Ref="J?"  Part="1" 
+AR Path="/5CAD5603/5CADB1B6" Ref="J?"  Part="1" 
+F 0 "J?" H 5470 4875 50  0000 C CNN
+F 1 "Conn_01x02" H 5470 4966 50  0000 C CNN
+F 2 "" H 5550 5200 50  0001 C CNN
+F 3 "~" H 5550 5200 50  0001 C CNN
+	1    5550 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CADB1BD
+P 4750 5100
+AR Path="/5CADB1BD" Ref="R?"  Part="1" 
+AR Path="/5CACB7A9/5CADB1BD" Ref="R?"  Part="1" 
+AR Path="/5CAD5603/5CADB1BD" Ref="R?"  Part="1" 
+F 0 "R?" V 4543 5100 50  0000 C CNN
+F 1 "50" V 4634 5100 50  0000 C CNN
+F 2 "" V 4680 5100 50  0001 C CNN
+F 3 "~" H 4750 5100 50  0001 C CNN
+	1    4750 5100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5350 5100 4900 5100
+Wire Wire Line
+	4600 5100 4300 5100
+Connection ~ 4300 5100
+Text Notes 3500 4450 0    50   ~ 0
+10 volts in 1 volt on o-scope
+$EndSCHEMATC

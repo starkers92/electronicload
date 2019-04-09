@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -31,5 +31,11 @@ S 5850 3450 500  150
 U 5CACBC9A
 F0 "ADC" 50
 F1 "file5CACBC99.sch" 50
+$EndSheet
+$Sheet
+S 5850 3900 500  150 
+U 5CAD5603
+F0 "monitor_outputs" 50
+F1 "file5CAD5602.sch" 50
 $EndSheet
 $EndSCHEMATC
